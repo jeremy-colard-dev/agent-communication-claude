@@ -1,0 +1,27 @@
+# Secrets et identifiants (NE JAMAIS COMMITER)
+.env
+.env.*
+!.env.example
+service_account.json
+*credentials*.json
+!service_account.example.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Fichiers temporaires et aperçus locaux
+tmp/
+output/
+*.tmp.html
+*.tmp.png
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

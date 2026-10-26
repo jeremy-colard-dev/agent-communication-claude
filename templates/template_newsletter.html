@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITRE_NEWSLETTER}} — Les Ateliers du Parc</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0; padding:0; background-color:#f4f2eb; font-family:'Manrope', Arial, sans-serif; color:#111111; -webkit-font-smoothing:antialiased;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f4f2eb; padding:32px 12px;">
+    <tr>
+      <td align="center">
+        <!-- Conteneur principal 640px -->
+        <table role="presentation" width="640" cellspacing="0" cellpadding="0" border="0" style="max-width:640px; width:100%; background-color:#fbf8f0; border:1px solid #e2dec9; border-radius:16px; overflow:hidden;">
+          
+          <!-- En-tête éditorial -->
+          <tr>
+            <td style="padding:36px 40px 24px 40px; border-bottom:1px solid #e2dec9;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td>
+                    <p style="margin:0 0 6px 0; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#1f5c4b; font-weight:700;">
+                      LES ATELIERS DU PARC &bull; LETTRE MENSUELLE
+                    </p>
+                    <h1 style="margin:0; font-family:'Playfair Display', Georgia, serif; font-size:32px; line-height:1.2; color:#111111; font-weight:700;">
+                      {{TITRE_PRINCIPAL_AVEC_UN_MOT_SOULIGNE}}
+                    </h1>
+                  </td>
+                  <td align="right" valign="top" style="font-size:12px; color:#4a4842; font-weight:600; white-space:nowrap;">
+                    {{MOIS_ANNEE}}
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Édito de la Présidente -->
+          <tr>
+            <td style="padding:32px 40px 20px 40px;">
+              <p style="margin:0 0 12px 0; font-size:12px; text-transform:uppercase; letter-spacing:1.5px; color:#c84b31; font-weight:700;">
+                Le mot de Claire Martin
+              </p>
+              <p style="margin:0 0 16px 0; font-size:16px; line-height:1.7; color:#111111;">
+                {{TEXTE_EDITO_PARAGRAPHE_1}}
+              </p>
+              <p style="margin:0; font-size:16px; line-height:1.7; color:#4a4842;">
+                {{TEXTE_EDITO_PARAGRAPHE_2}}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Carte Événement Phare avec Photo -->
+          <tr>
+            <td style="padding:12px 40px 28px 40px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f4f2eb; border:1px solid #e2dec9; border-radius:12px; overflow:hidden;">
+                <tr>
+                  <td>
+                    <img src="{{URL_IMAGE_VEDETTE}}" alt="{{ALT_IMAGE_VEDETTE}}" width="560" style="display:block; width:100%; max-height:280px; object-fit:cover;">
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:24px 28px;">
+                    <span style="display:inline-block; background-color:#1f5c4b; color:#fbf8f0; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:5px 12px; border-radius:999px; margin-bottom:12px;">
+                      {{DATE_EVENEMENT_PHARE}}
+                    </span>
+                    <h2 style="margin:0 0 10px 0; font-family:'Playfair Display', Georgia, serif; font-size:24px; color:#111111;">
+                      {{TITRE_EVENEMENT_PHARE}}
+                    </h2>
+                    <p style="margin:0 0 18px 0; font-size:15px; line-height:1.65; color:#4a4842;">
+                      {{DESCRIPTION_EVENEMENT_PHARE}}
+                    </p>
+                    <a href="mailto:contact@ateliersduparc.org?subject={{SUJET_INSCRIPTION}}" style="display:inline-block; background-color:#c84b31; color:#fbf8f0; text-decoration:none; font-size:14px; font-weight:700; padding:12px 22px; border-radius:8px;">
+                      Réserver ma place
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Grille Agenda à 2 colonnes -->
+          <tr>
+            <td style="padding:0 40px 32px 40px;">
+              <h3 style="margin:0 0 16px 0; font-family:'Playfair Display', Georgia, serif; font-size:22px; color:#111111; border-bottom:1px solid #e2dec9; padding-bottom:10px;">
+                À noter dans vos agendas
+              </h3>
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                  <td width="48%" valign="top" style="background-color:#f4f2eb; border:1px solid #e2dec9; border-radius:10px; padding:18px;">
+                    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; text-transform:uppercase; color:#c84b31;">
+                      {{DATE_AGENDA_1}}
+                    </p>
+                    <h4 style="margin:0 0 8px 0; font-family:'Playfair Display', Georgia, serif; font-size:18px; color:#111111;">
+                      {{TITRE_AGENDA_1}}
+                    </h4>
+                    <p style="margin:0; font-size:14px; line-height:1.55; color:#4a4842;">
+                      {{TEXTE_AGENDA_1}}
+                    </p>
+                  </td>
+                  <td width="4%">&nbsp;</td>
+                  <td width="48%" valign="top" style="background-color:#f4f2eb; border:1px solid #e2dec9; border-radius:10px; padding:18px;">
+                    <p style="margin:0 0 6px 0; font-size:11px; font-weight:700; text-transform:uppercase; color:#1f5c4b;">
+                      {{DATE_AGENDA_2}}
+                    </p>
+                    <h4 style="margin:0 0 8px 0; font-family:'Playfair Display', Georgia, serif; font-size:18px; color:#111111;">
+                      {{TITRE_AGENDA_2}}
+                    </h4>
+                    <p style="margin:0; font-size:14px; line-height:1.55; color:#4a4842;">
+                      {{TEXTE_AGENDA_2}}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Pied de page sombre contrasté -->
+          <tr>
+            <td style="background-color:#111111; color:#f4f2eb; padding:32px 40px;">
+              <p style="margin:0 0 6px 0; font-family:'Playfair Display', Georgia, serif; font-size:20px; color:#fbf8f0; font-weight:700;">
+                Les Ateliers du Parc
+              </p>
+              <p style="margin:0 0 16px 0; font-size:13px; color:#c9c5b8; line-height:1.6;">
+                Tiers-lieu culturel, artisanal et solidaire &bull; 14 Allée des Cèdres, 69006 Lyon<br>
+                Téléphone : <strong style="color:#fbf8f0;">04 72 00 11 22</strong> &bull;
+                E-mail : <a href="mailto:contact@ateliersduparc.org" style="color:#fbf8f0; text-decoration:underline;">contact@ateliersduparc.org</a>
+              </p>
+              <p style="margin:0; font-size:11px; color:#8c887d;">
+                Vous recevez cette lettre d'information en tant qu'adhérent ou partenaire des Ateliers du Parc.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

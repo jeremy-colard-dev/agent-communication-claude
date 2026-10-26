@@ -1,0 +1,50 @@
+{
+  "organization": {
+    "name": "Les Ateliers du Parc",
+    "short_name": "ADP",
+    "tagline": "Tiers-lieu culturel, artisanal et solidaire",
+    "city": "Lyon",
+    "address": "14 Allée des Cèdres, 69006 Lyon",
+    "email": "contact@ateliersduparc.org",
+    "phone": "04 72 00 11 22",
+    "website": "https://www.ateliersduparc.org"
+  },
+  "business_user": {
+    "first_name": "Claire",
+    "full_name": "Claire Martin",
+    "role": "Présidente de l'association",
+    "email": "claire.martin@ateliersduparc.org"
+  },
+  "tech_support": {
+    "name": "Jérémy Colard",
+    "role": "Architecte & Référent Technique",
+    "email": "support-tech@ateliersduparc.org"
+  },
+  "design_system": {
+    "colors": {
+      "background_outer": "#f4f2eb",
+      "background_card": "#fbf8f0",
+      "text_primary": "#111111",
+      "text_secondary": "#4a4842",
+      "accent_primary": "#1f5c4b",
+      "accent_highlight": "#c84b31",
+      "border_subtle": "#e2dec9"
+    },
+    "typography": {
+      "heading_font": "Playfair Display",
+      "body_font": "Manrope"
+    },
+    "rules": {
+      "allow_emojis_in_emails": false,
+      "instagram_margin_hex": "#f4f2eb"
+    }
+  },
+  "connectors": {
+    "brevo_enabled": true,
+    "meta_enabled": true,
+    "appscript_email_enabled": true,
+    "gcs_media_enabled": false,
+    "firebase_gallery_enabled": false,
+    "firestore_sync_enabled": false
+  }
+}

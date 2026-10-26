@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Affiche A4 — {{TITRE_EVENEMENT}}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4 portrait; margin: 0; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      width: 210mm;
+      height: 297mm;
+      background-color: #f4f2eb;
+      color: #111111;
+      font-family: 'Manrope', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18mm;
+    }
+    .poster-frame {
+      background-color: #fbf8f0;
+      border: 2px solid #111111;
+      border-radius: 16px;
+      padding: 14mm;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .kicker {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: #1f5c4b;
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 38pt;
+      line-height: 1.08;
+      margin: 12px 0 18px 0;
+    }
+    h1 em {
+      color: #c84b31;
+      font-style: italic;
+      text-decoration: underline;
+    }
+    .hero-photo {
+      width: 100%;
+      height: 95mm;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid #e2dec9;
+      margin-bottom: 16px;
+    }
+    .details-box {
+      background-color: #f4f2eb;
+      border-left: 5px solid #c84b31;
+      padding: 16px 20px;
+      border-radius: 8px;
+      font-size: 13pt;
+      line-height: 1.5;
+    }
+    .footer-bar {
+      background-color: #111111;
+      color: #fbf8f0;
+      padding: 14px 20px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11pt;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster-frame">
+    <div>
+      <div class="kicker">LES ATELIERS DU PARC &bull; RENDEZ-VOUS OUVERT À TOUS</div>
+      <h1>{{TITRE_DEBUT}} <em>{{MOT_CLE_ACCENT}}</em> {{TITRE_FIN}}</h1>
+      <img class="hero-photo" src="{{URL_PHOTO}}" alt="{{ALT_PHOTO}}">
+      <p style="font-size: 14pt; line-height: 1.6; color: #4a4842; margin: 0 0 18px 0;">
+        {{DESCRIPTION_EVENEMENT}}
+      </p>
+      <div class="details-box">
+        <strong>Date &amp; Horaire :</strong> {{DATE_ET_HEURE}}<br>
+        <strong>Lieu :</strong> 14 Allée des Cèdres, 69006 Lyon<br>
+        <strong>Tarif :</strong> {{MODALITES_ACCES}}
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div>
+        <strong>Les Ateliers du Parc</strong><br>
+        Inscriptions : contact@ateliersduparc.org
+      </div>
+      <div style="text-align: right;">
+        <strong>04 72 00 11 22</strong><br>
+        www.ateliersduparc.org
+      </div>
+    </div>
+  </div>
+</body>
+</html>
